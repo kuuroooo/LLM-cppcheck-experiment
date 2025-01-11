@@ -1,0 +1,257 @@
+Checking extracted_c_snippets/snippet_0.c ...
+1/20 files checked 0% done
+Checking extracted_c_snippets/snippet_1.c ...
+extracted_c_snippets/snippet_1.c:1:1: portability: Omitted return type of function 'gnutls_session_get_data' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+gnutls_session_get_data (gnutls_session_t session,
+^
+extracted_c_snippets/snippet_1.c:21:22: style: Condition 'psession.size>*session_data_size' is always false [knownConditionTrueFalse]
+   if (psession.size > *session_data_size)
+                     ^
+extracted_c_snippets/snippet_1.c:19:22: note: *session_data_size is assigned 'psession.size' here.
+  *session_data_size = psession.size;
+                     ^
+extracted_c_snippets/snippet_1.c:21:22: note: Condition 'psession.size>*session_data_size' is always false
+   if (psession.size > *session_data_size)
+                     ^
+2/20 files checked 2% done
+Checking extracted_c_snippets/snippet_10.c ...
+3/20 files checked 5% done
+Checking extracted_c_snippets/snippet_11.c ...
+extracted_c_snippets/snippet_11.c:85:7: style: inconclusive: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+      break;
+      ^
+Checking extracted_c_snippets/snippet_11.c: SPLASH_CMYK...
+4/20 files checked 10% done
+Checking extracted_c_snippets/snippet_12.c ...
+extracted_c_snippets/snippet_12.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+extracted_c_snippets/snippet_12.c:8:7: style: The scope of the variable 'x' can be reduced. [variableScope]
+  int x, y;
+      ^
+extracted_c_snippets/snippet_12.c:11:7: style: The scope of the variable 'i' can be reduced. [variableScope]
+  int i;
+      ^
+extracted_c_snippets/snippet_12.c:64:12: style: Local variable 'imgStr' shadows outer variable [shadowVariable]
+    delete imgStr;
+           ^
+extracted_c_snippets/snippet_12.c:9:16: note: Shadowed declaration
+  ImageStream *imgStr;
+               ^
+extracted_c_snippets/snippet_12.c:64:12: note: Shadow variable
+    delete imgStr;
+           ^
+extracted_c_snippets/snippet_12.c:26:25: style: Variable 'is_identity_transform' is assigned a value that is never used. [unreadVariable]
+  is_identity_transform = colorMap->getColorSpace()->getMode() == csDeviceRGB ||
+                        ^
+extracted_c_snippets/snippet_12.c:73:11: style: Variable 'm_image' is assigned a value that is never used. [unreadVariable]
+  m_image = 0;
+          ^
+extracted_c_snippets/snippet_12.c:64:12: style: Unused variable: imgStr [unusedVariable]
+    delete imgStr;
+           ^
+extracted_c_snippets/snippet_12.c:75:10: style: Unused variable: imgStr [unusedVariable]
+  delete imgStr;
+         ^
+5/20 files checked 15% done
+Checking extracted_c_snippets/snippet_13.c ...
+extracted_c_snippets/snippet_13.c:1:2: error: Code 'DynamicMetadataProvider::DynamicMetadataProvider' is invalid C code. [syntaxError]
+ DynamicMetadataProvider::DynamicMetadataProvider(const DOMElement* e)
+ ^
+6/20 files checked 19% done
+Checking extracted_c_snippets/snippet_14.c ...
+extracted_c_snippets/snippet_14.c:41:31: portability: '(void*)nfs_packet->data' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ p = (void *)nfs_packet->data + sizeof(struct rpc_reply) + 4;
+                              ^
+extracted_c_snippets/snippet_14.c:41:58: portability: '(void*)nfs_packet->data+sizeof(struct rpc_reply)' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+ p = (void *)nfs_packet->data + sizeof(struct rpc_reply) + 4;
+                                                         ^
+7/20 files checked 21% done
+Checking extracted_c_snippets/snippet_15.c ...
+extracted_c_snippets/snippet_15.c:10:0: error: Found an exit path from function with non-void return type that has missing return statement [missingReturn]
+  return ret;
+^
+extracted_c_snippets/snippet_15.c:4:9: style: Variable 'path' can be declared as pointer to const [constVariablePointer]
+  char *path;
+        ^
+extracted_c_snippets/snippet_15.c:16:8: style: Variable 'rlen' is assigned a value that is never used. [unreadVariable]
+  rlen = ntohl(net_read_uint32(data)); /* new path length */
+       ^
+extracted_c_snippets/snippet_15.c:19:8: style: Variable 'path' is assigned a value that is never used. [unreadVariable]
+  path = (char *)data;
+       ^
+8/20 files checked 22% done
+Checking extracted_c_snippets/snippet_16.c ...
+extracted_c_snippets/snippet_16.c:1:1: portability: Omitted return type of function 'aspath_put' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+aspath_put (struct stream *s, struct aspath *as, int use32bit )
+^
+extracted_c_snippets/snippet_16.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+extracted_c_snippets/snippet_16.c:9:7: style: Condition 'seg' is always true [knownConditionTrueFalse]
+  if (seg)
+      ^
+extracted_c_snippets/snippet_16.c:1:46: style: Parameter 'as' can be declared as pointer to const [constParameterPointer]
+aspath_put (struct stream *s, struct aspath *as, int use32bit )
+                                             ^
+9/20 files checked 27% done
+Checking extracted_c_snippets/snippet_17.c ...
+10/20 files checked 29% done
+Checking extracted_c_snippets/snippet_18.c ...
+extracted_c_snippets/snippet_18.c:16:20: warning: Identical inner 'if' condition is always true. [identicalInnerCondition]
+        if (!users || !*users)
+                   ^
+extracted_c_snippets/snippet_18.c:15:13: note: outer condition: !users||!*users
+ if (!users || !*users)
+            ^
+extracted_c_snippets/snippet_18.c:16:20: note: identical inner condition: !users||!*users
+        if (!users || !*users)
+                   ^
+extracted_c_snippets/snippet_18.c:4:8: style: Variable 'users' can be declared as pointer to const [constVariablePointer]
+ char *users = lp_auth_users(module);
+       ^
+extracted_c_snippets/snippet_18.c:8:26: style: Variable 'auth_uid_groups_cnt' is assigned a value that is never used. [unreadVariable]
+ int auth_uid_groups_cnt = -1;
+                         ^
+extracted_c_snippets/snippet_18.c:10:18: style: Variable 'group_match' is assigned a value that is never used. [unreadVariable]
+ int group_match = -1;
+                 ^
+extracted_c_snippets/snippet_18.c:12:14: style: Variable 'opt_ch' is assigned a value that is never used. [unreadVariable]
+ char opt_ch = '\0';
+             ^
+extracted_c_snippets/snippet_18.c:6:7: style: Unused variable: line [unusedVariable]
+ char line[BIGPATHBUFLEN];
+      ^
+extracted_c_snippets/snippet_18.c:9:14: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+ const char *err = NULL;
+             ^
+extracted_c_snippets/snippet_18.c:11:8: style: Unused variable: tok [unusedVariable]
+ char *tok, *pass;
+       ^
+extracted_c_snippets/snippet_18.c:11:14: style: Unused variable: pass [unusedVariable]
+ char *tok, *pass;
+             ^
+11/20 files checked 30% done
+Checking extracted_c_snippets/snippet_19.c ...
+extracted_c_snippets/snippet_19.c:297:66: error: Unmatched ')'. Configuration: ''. [syntaxError]
+      literal used is the one at the head of the mtfSymbol array.) */
+                                                                 ^
+12/20 files checked 57% done
+Checking extracted_c_snippets/snippet_2.c ...
+extracted_c_snippets/snippet_2.c:1:1: portability: Omitted return type of function 'gnutls_session_get_data' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+gnutls_session_get_data (gnutls_session_t session,
+^
+extracted_c_snippets/snippet_2.c:2:55: style: Parameter 'session_data_size' can be declared as pointer to const [constParameterPointer]
+                         void *session_data, size_t * session_data_size)
+                                                      ^
+13/20 files checked 58% done
+Checking extracted_c_snippets/snippet_20.c ...
+extracted_c_snippets/snippet_20.c:1:1: portability: Omitted return type of function 'BufCompressedFill' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+BufCompressedFill (BufFilePtr f)
+^
+extracted_c_snippets/snippet_20.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+extracted_c_snippets/snippet_20.c:4:34: style: Variable 'de_stack' can be declared as pointer to const [constVariablePointer]
+    register char_type *stackp, *de_stack;
+                                 ^
+extracted_c_snippets/snippet_20.c:7:24: style: Variable 'bufend' can be declared as pointer to const [constVariablePointer]
+    BufChar     *buf, *bufend;
+                       ^
+14/20 files checked 62% done
+Checking extracted_c_snippets/snippet_4.c ...
+15/20 files checked 64% done
+Checking extracted_c_snippets/snippet_5.c ...
+extracted_c_snippets/snippet_5.c:1:1: portability: Omitted return type of function 'add_range' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+add_range(fz_context *ctx, pdf_cmap *cmap, unsigned int low, unsigned int high, unsigned int out, int check_for_overlap, int many)
+^
+extracted_c_snippets/snippet_5.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Checking extracted_c_snippets/snippet_5.c: CHECK_SPLAY...
+Checking extracted_c_snippets/snippet_5.c: DUMP_SPLAY...
+16/20 files checked 72% done
+Checking extracted_c_snippets/snippet_6.c ...
+extracted_c_snippets/snippet_6.c:43:2: error: There is an unknown macro here somewhere. Configuration is required. If fz_always is a macro then please configure it. [unknownMacro]
+ fz_always(ctx)
+ ^
+17/20 files checked 75% done
+Checking extracted_c_snippets/snippet_7.c ...
+extracted_c_snippets/snippet_7.c:1:1: portability: Omitted return type of function 'add_range' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+add_range(fz_context *ctx, pdf_cmap *cmap, unsigned int low, unsigned int high, unsigned int out, int check_for_overlap, int many)
+^
+extracted_c_snippets/snippet_7.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Checking extracted_c_snippets/snippet_7.c: CHECK_SPLAY...
+Checking extracted_c_snippets/snippet_7.c: DUMP_SPLAY...
+18/20 files checked 83% done
+Checking extracted_c_snippets/snippet_8.c ...
+extracted_c_snippets/snippet_8.c:11:3: error: syntax error [syntaxError]
+  case PDF_MAT_SHADE:
+  ^
+19/20 files checked 94% done
+Checking extracted_c_snippets/snippet_9.c ...
+extracted_c_snippets/snippet_9.c:1:1: portability: Omitted return type of function 'sparse_dump_region' defaults to int, this is not supported by ISO C99 and later standards. [returnImplicitInt]
+sparse_dump_region (struct tar_sparse_file *file, size_t i)
+^
+extracted_c_snippets/snippet_9.c:81:16: style: Condition 'rc' is always true [knownConditionTrueFalse]
+   for (i = 0; rc && i < file.stat_info->sparse_map_avail; i++)
+               ^
+extracted_c_snippets/snippet_9.c:31:20: style: Local variable 'blk' shadows outer variable [shadowVariable]
+      union block *blk = find_next_block ();
+                   ^
+extracted_c_snippets/snippet_9.c:3:16: note: Shadowed declaration
+  union block *blk;
+               ^
+extracted_c_snippets/snippet_9.c:31:20: note: Shadow variable
+      union block *blk = find_next_block ();
+                   ^
+extracted_c_snippets/snippet_9.c:76:11: style: Local variable 'i' shadows outer argument [shadowArgument]
+   size_t i;
+          ^
+extracted_c_snippets/snippet_9.c:1:58: note: Shadowed declaration
+sparse_dump_region (struct tar_sparse_file *file, size_t i)
+                                                         ^
+extracted_c_snippets/snippet_9.c:76:11: note: Shadow variable
+   size_t i;
+          ^
+20/20 files checked 100% done
+extracted_c_snippets/snippet_0.c:1:0: style: The function 'ssl_get_algorithm2' is never used. [unusedFunction]
+ long ssl_get_algorithm2(SSL *s)
+^
+extracted_c_snippets/snippet_1.c:1:0: style: The function 'gnutls_session_get_data' is never used. [unusedFunction]
+gnutls_session_get_data (gnutls_session_t session,
+^
+extracted_c_snippets/snippet_10.c:1:0: style: The function 'dns_read_name' is never used. [unusedFunction]
+ int dns_read_name(unsigned char *buffer, unsigned char *bufend,
+^
+extracted_c_snippets/snippet_14.c:1:0: style: The function 'nfs_readlink_req' is never used. [unusedFunction]
+static int nfs_readlink_req(struct nfs_priv *npriv, struct nfs_fh *fh,
+^
+extracted_c_snippets/snippet_15.c:1:0: style: The function 'nfs_readlink_reply' is never used. [unusedFunction]
+static int nfs_readlink_reply(unsigned char *pkt, unsigned len)
+^
+extracted_c_snippets/snippet_16.c:1:0: style: The function 'aspath_put' is never used. [unusedFunction]
+aspath_put (struct stream *s, struct aspath *as, int use32bit )
+^
+extracted_c_snippets/snippet_17.c:1:0: style: The function 'sum_update' is never used. [unusedFunction]
+void sum_update(const char *p, int32 len)
+^
+extracted_c_snippets/snippet_18.c:1:0: style: The function 'auth_server' is never used. [unusedFunction]
+char *auth_server(int f_in, int f_out, int module, const char *host,
+^
+extracted_c_snippets/snippet_20.c:1:0: style: The function 'BufCompressedFill' is never used. [unusedFunction]
+BufCompressedFill (BufFilePtr f)
+^
+extracted_c_snippets/snippet_4.c:1:0: style: The function 'fz_init_cached_color_converter' is never used. [unusedFunction]
+void fz_init_cached_color_converter(fz_context *ctx, fz_color_converter *cc, fz_colorspace *is, fz_colorspace *ds, fz_colorspace *ss, const fz_color_params *params)
+^
+extracted_c_snippets/snippet_5.c:1:0: style: The function 'add_range' is never used. [unusedFunction]
+add_range(fz_context *ctx, pdf_cmap *cmap, unsigned int low, unsigned int high, unsigned int out, int check_for_overlap, int many)
+^
+extracted_c_snippets/snippet_9.c:1:0: style: The function 'sparse_dump_region' is never used. [unusedFunction]
+sparse_dump_region (struct tar_sparse_file *file, size_t i)
+^
+nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
+
